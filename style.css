@@ -573,13 +573,81 @@ section.page-content {
     transition: all 0.4s ease;
 }
 
-/* মাউস নিলেই চারপাশে কালার ও লাইটিং হবে */
+/* by mouse around will be colourfull and lighting */
 .glass-card:hover,
 .skill-item:hover,
 .education-item:hover,
 .project-box:hover {
-    transform: translateY(-8px); /* কার্ডটি সামান্য উপরে উঠবে */
-    border-color: var(--primary-color); /* চারপাশের বর্ডার উজ্জ্বল প্রাইমারি কালার হবে */
+    transform: translateY(-8px); /* card will be up little bit */
+    border-color: var(--primary-color); /* boarder colour */
     box-shadow: 0 0 25px var(--primary-glow), 
-                0 0 50px rgba(0, 173, 181, 0.2); /* চারপাশে হালকা ছায়াসদৃশ সফট আলো (Glow) ছড়াবে */
+                0 0 50px rgba(0, 173, 181, 0.2); /* around glow*/
+}
+
+/* --- Mobile Responsive Fix --- */
+@media (max-width: 768px) {
+    /* section padding and display flex */
+    .home {
+        flex-direction: column-reverse !important; /* photo on top and text down on phone */
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 6rem !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        gap: 2.5rem !important;
+        text-align: center !important;
+        overflow-x: hidden;
+    }
+
+    /* text center and full width */
+    .home-content {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 2.2rem !important; /* heading will be auto by phone screen */
+        line-height: 1.3 !important;
+        word-break: break-word;
+    }
+
+    .home-content h3 {
+        font-size: 1.3rem !important;
+    }
+
+    .home-content p {
+        font-size: 0.95rem !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* button and social media icon straigh  */
+    .cta-buttons {
+        justify-content: center !important;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .social-media {
+        justify-content: center !important;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    /* solve image size */
+    .home-img {
+        width: 100% !important;
+        max-width: 280px !important; /* acurate size on phone */
+        height: auto !important;
+        margin: 0 auto;
+    }
+
+    .img-frame {
+        width: 250px !important;
+        height: 250px !important;
+    }
 }
