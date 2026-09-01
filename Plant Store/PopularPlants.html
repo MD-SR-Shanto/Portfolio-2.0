@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Lover's Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html"><img src="images/logo.png" height="20px" width="20ox">
+                plant Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PopularPlants.html">Popular Plants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PhotoGallery.html">Photo Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" PetFriendlyPlants.html">Pet Friendly Plants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner_text">
+                        <h1 class="text-center text-light">Plant Store</h1>
+                        <p class="text-center fw-blod text-light">Plants are the eukaryotes that form the kingdom
+                            Plantae; they are predominantly photosynthetic.
+                            This means that they obtain their energy from sunlight, using chloroplasts derived from
+                            endosymbiosis with
+                            cyanobacteria to produce sugars from carbon dioxide and water, using the green pigment
+                            chlorophyll.</p>
+                        <div class="text-center">
+                            <button type="submit" class="btn" onclick="hpAlert()">Read more about us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Plants Section -->
+    <section id="popular-plants">
+        <h2 align="center">Popular Plants</h2>
+        <div class="plant-cards">
+            <div class="card">
+                <img src="images/5th.jpeg" alt="Popular Plant 1">
+                <h3>Echeveria</h3>
+                <p>Echeveria plants are evergreen. Flowers on short stalks (cymes) arise from compact rosettes of 
+                    succulent fleshy, often brightly coloured leaves. Species are polycarpic,
+                     meaning that they may flower and set seed many times over the course of their lifetimes.</p>
+            </div>
+            <div class="card">
+                <img src="images/6th.webp" alt="Popular Plant 2">
+                <h3>Hoya carnosa</h3>
+                <p>Hoya carnosa, the porcelainflower or wax plant, is a species of flowering plant in the family Apocynaceae, native to East Asia. 
+                    It is a common house plant grown for its attractive waxy foliage, 
+                    and sweetly scented flowers. It is grown well in pots and hanging baskets.</p>
+            </div>
+            <div class="card">
+                <img src="images/7th.webp" alt="Popular Plant 3">
+                <h3>Peperomia</h3>
+                <p>Peperomia is one of the two large genera of the family Piperaceae. It is estimated that there are at least over 1,000 species, 
+                    occurring in all tropical and subtropical regions of the world. They are concentrated in South and Central America, 
+                    but may also be found in southern North America, the Caribbean islands, Africa, Oceania, and southern and eastern parts of Asia.</p>
+            </div>
+        </div>
+    </section>
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="container-fluid text-center py-3 bg-secondary">
+            <img src="images/logo.png" height="20px" width="20ox"> © 2025 All Rights Reserved | www.plantStore.com
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById('matchmaker-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            // Get the selected values
+            const light = document.getElementById('light').value;
+            const water = document.getElementById('water').value;
+            const size = document.getElementById('size').value;
+
+            // Match conditions to suggest a plant
+            let plantSuggestion = '';
+
+            if (light === 'high' && water === 'medium' && size === 'large') {
+                plantSuggestion = 'Suggested Plant: Fiddle Leaf Fig';
+            } else if (light === 'medium' && water === 'low' && size === 'small') {
+                plantSuggestion = 'Suggested Plant: Snake Plant';
+            } else if (light === 'low' && water === 'high' && size === 'small') {
+                plantSuggestion = 'Suggested Plant: Pothos';
+            } else if (light === 'high' && water === 'low' && size === 'medium') {
+                plantSuggestion = 'Suggested Plant: ZZ Plant';
+            } else {
+                plantSuggestion = 'Suggested Plant: Peace Lily';
+            }
+
+            // Display the suggestion
+            document.getElementById('suggested-plant').textContent = plantSuggestion;
+        });
+    </script>
+
+    </body>
+    </html>

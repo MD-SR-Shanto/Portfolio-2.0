@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Control Strategies</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#"><img src="image/logo.webp" height="20px" width="20ox"> Agricultural Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="farmingGuidesSection.html">Farming Guides Section</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cropDetails.html">Crop Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" pestControlStrategies.html">Pest Control Strategies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner_text">
+                        <h1 class="text-center text-light">Agricultural Information Hub</h1>
+                        <p class="text-center fw-blod text-light">The Agricultural Information Hub is a comprehensive 
+                            platform providing resources, tools, and insights to support farmers, agricultural
+                             professionals, and enthusiasts in improving productivity, sustainability, and crop management.</p>
+                        <div class="text-center">
+                            <button type="submit" class="btn" onclick="hpAlert()">Read more about us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pest Control section -->
+    <section class="cropDetails my-5">
+        <div class="container crop-image">
+            <div class="collecton_text text-center">
+                <h2 class="fw-bold">Pest Control Strategies</h2>
+                <p>Here are four pest control strategies along with their details</p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="main_text border pb-3 px-3">
+                        <img src="image/pest1.avif" class="w-100" alt="">
+                        <div class="product_text">
+                            <h3 class="fw-blod text-success">Integrated Pest Management</h3>
+                            <p>IPM combines biological, cultural and chemical tools to manage pest populations 
+                                effectively..</p>
+                            <div class="btn w-100 " onclick = "pcAlert()">
+                                <a href="#" class="text-light rounded px-3 bg-success  p-2 td-none fw-bold">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="main_text border pb-3 px-3">
+                        <img src="image/pest2.png" class="w-100" alt="">
+                        <div class="product_text">
+                            <h3 class="fw-blod text-success">Biological Pest <br>Control</h3>
+                            <p>This method uses natural predators, parasites, or pathogens to control pest populations. For example..</p>
+                            <div class="btn w-100 " onclick = "pcAlert()">
+                                <a href="#" class="text-light rounded px-3 bg-success  p-2 td-none fw-bold">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="main_text border pb-3 px-3">
+                        <video height="270px" width="380px" class="w-100" controls>
+                            <source src="video/crop.mp4" type="video/mp4">
+                        </video>
+                        <div class="product_text">
+                            <h3 class="fw-blod text-success">Crop Rotation: Disrupting Pest</h3>
+                            <p>Changing the crops planted in a specific field each season disrupts the life cycle of pests and 
+                                diseases that target..</p>
+                            <div class="btn w-100 " onclick = "pcAlert()">
+                                <a href="#" class="text-light rounded px-3 bg-success  p-2 td-none fw-bold">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container-fluid text-center py-3 bg-secondary">
+            <img src="image/logo.webp" height="20px" width="20ox"> © 2024 All Rights Reserved | www.agriculturalinfohub.com
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
