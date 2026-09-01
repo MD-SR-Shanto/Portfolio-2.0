@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | MD SR Shanto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'"> 
+            <a href="index.html" class="logo">MD SR <span>Shanto</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a href="projects.html" class="nav-link active">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <main>
+        <section class="page-content projects" id="projects">
+            <h2 class="heading reveal">Featured <span>Projects</span></h2>
+            
+            <div class="projects-container">
+                <div class="project-box 3d-card reveal">
+                    <img src="image/project 1.png" alt="Agricultural Hub" onerror="this.src='https://via.placeholder.com/600x400/121829/00adb5?text=Agricultural+Hub'">
+                    <div class="project-info">
+                        <h4>Agricultural Hub</h4>
+                        <p>A full-stack agricultural information platform providing real-time data and farming solutions.</p>
+                        <a href="Agricultural-Information-Hub-main/index.html" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-box 3d-card reveal">
+                    <img src="image/project 2.png" alt="Plant Store" onerror="this.src='https://via.placeholder.com/600x400/121829/00adb5?text=Plant+Store'">
+                    <div class="project-info">
+                        <h4>Interactive Plant Store</h4>
+                        <p>Interactive web application utilizing D3.js and responsive UI components to display metrics and products.</p>
+                        <a href="Plant Store/index.html" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-box 3d-card reveal">
+                    <div class="project-placeholder-icon"><i class="fas fa-robot"></i></div>
+                    <div class="project-info static-info">
+                        <h4>Autonomous Line Follower Robot</h4>
+                        <p>PID-driven hardware robotics project using Arduino Nano, TB6612FNG driver, and N20 gear motors.</p>
+                        <span class="tag">Robotics & Hardware</span>
+                    </div>
+                </div>
+
+                <div class="project-box 3d-card reveal">
+                    <div class="project-placeholder-icon"><i class="fas fa-cube"></i></div>
+                    <div class="project-info static-info">
+                        <h4>3D Interactive Portfolio</h4>
+                        <p>Next-gen developer portfolio rendered with WebGL Three.js particle geometry and dark glassmorphism.</p>
+                        <span class="tag">Three.js / WebGL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 by MD SR Shanto | All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | MD SR Shanto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'"> 
+            <a href="index.html" class="logo">MD SR <span>Shanto</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="education.html" class="nav-link active">Education</a> 
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <main>
+        <section class="page-content education" id="education">
+            <h2 class="heading reveal">My <span>Education</span></h2>
+            
+            <div class="education-container">
+                
+                <div class="education-item 3d-card reveal">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="content">
+                        <h3>Bachelor of Science in Computer Science and Engineering (B.Sc. in CSE)</h3>
+                        <p class="institution">BGIFT Institute of Science and Technology (BIST), Gazipur</p>
+                        <p class="date"><i class="far fa-calendar-alt"></i> 2024 — Present (Expected Graduation: 2028)</p>
+                        <p class="details"><strong>Key Focus:</strong> Data Structures & Algorithms, Web Architecture, Software Engineering, Database Systems, Hardware & Robotics Integration.</p>
+                    </div>
+                </div>
+
+                <div class="education-item 3d-card reveal">
+                    <div class="icon"><i class="fas fa-school"></i></div>
+                    <div class="content">
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <p class="institution">Konabari Ideal College, Gazipur</p>
+                        <p class="date"><i class="far fa-calendar-alt"></i> 2021 — 2022</p>
+                        <p class="details"><strong>GPA: 4.17 / 5.00</strong> | Science Stream. Focused on Mathematics, Physics, Chemistry & ICT.</p>
+                    </div>
+                </div>
+
+                <div class="education-item 3d-card reveal">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <div class="content">
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <p class="institution">Konabari M.A Kuddus High School & College, Gazipur</p>
+                        <p class="date"><i class="far fa-calendar-alt"></i> 2019 — 2020</p>
+                        <p class="details"><strong>GPA: 5.00 / 5.00 (Golden)</strong> | Science Stream. Strong base in Physical Sciences and Mathematics.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="projects.html" class="btn primary-btn">Next: View My Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 by MD SR Shanto | All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
