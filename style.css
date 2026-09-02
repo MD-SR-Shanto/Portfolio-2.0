@@ -672,65 +672,40 @@ section.page-content {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-    /* Header positioning and padding adjustments */
-    header, .header {
-        padding: 1rem 1.5rem !important;
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        z-index: 1000 !important;
-        background: rgba(10, 25, 47, 0.95) !important; /* Dark background overlay */
-        backdrop-filter: blur(10px) !important;
+    /* ১. আইকন দৃশ্যমান করা */
+    #menu-btn {
+        display: block;
     }
 
-    /* Display the mobile hamburger menu icon */
-    #menu-icon, .menu-icon {
-        display: block !important;
-        font-size: 1.8rem !important;
-        color: #00ADB5 !important;
-        cursor: pointer !important;
-    }
-
-    /* Mobile navigation dropdown menu (hidden by default) */
+    /* ২. মোবাইলে নেভবার ড্রপডাউন করা */
     .navbar {
-        position: absolute !important;
-        top: 100% !important;
-        left: 0 !important;
-        width: 100% !important;
-        padding: 1rem 2rem !important;
-        background: rgba(10, 25, 47, 0.98) !important;
-        border-bottom: 1px solid rgba(0, 173, 181, 0.2) !important;
-        display: none; /* Hide menu links initially on mobile */
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 1rem !important;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        background: rgba(9, 12, 16, 0.95);
+        border-bottom: 2px solid var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
     }
 
-    /* Display navbar when active class is triggered via JavaScript */
+    /* ৩. মেনু বাটনে ক্লিক করলে দেখাবে */
     .navbar.active {
-        display: flex !important;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 
-    /* Mobile menu link styling */
     .navbar a {
-        display: block !important;
-        font-size: 1.1rem !important;
-        padding: 0.6rem 1.5rem !important;
-        width: 100% !important;
-        text-align: center !important;
-        border-radius: 6px !important;
+        display: block;
+        margin: 0;
+        text-align: center;
     }
-}
-
-/* Hide menu icon on desktop screens */
-#menu-icon {
-    font-size: 2rem;
-    color: #00ADB5;
-    cursor: pointer;
-    display: none;
+    
 }

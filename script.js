@@ -194,10 +194,3 @@ document.querySelectorAll('.card-3d').forEach(card => {
   });
 });
 
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-xmark'); // ক্লিকে ৩-লাইনের বদলে X চিহ্ন হবে
-    navbar.classList.toggle('active');
-};
