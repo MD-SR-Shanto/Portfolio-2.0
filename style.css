@@ -539,32 +539,6 @@ section.page-content {
     }
 }
 
-/* @media (max-width: 768px) {
-    #menu-btn { display: block; }
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1.5rem;
-        background: rgba(9, 12, 16, 0.95);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: 0.4s ease;
-    }
-    .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    .navbar a {
-        display: block;
-        margin: 1rem 0;
-        text-align: center;
-    }
-    .input-box {
-        flex-direction: column;
-    }
-} */
-
 /* Card Hover Glow Effect */
 .glass-card,
 .skill-item,
@@ -708,4 +682,15 @@ section.page-content {
         text-align: center;
     }
     
+    /* প্রজেক্টগুলো মোবাইলে একটার নিচে আরেকটা দেখানোর জন্য */
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr; /* ১টি কলামে নিচে নিচে সাজাবে */
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .project-box {
+        width: 100%; /* প্রতিটি কার্ড পুরো স্ক্রিন নিবে */
+    }
 }
