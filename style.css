@@ -539,7 +539,7 @@ section.page-content {
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #menu-btn { display: block; }
     .navbar {
         position: absolute;
@@ -563,7 +563,7 @@ section.page-content {
     .input-box {
         flex-direction: column;
     }
-}
+} */
 
 /* Card Hover Glow Effect */
 .glass-card,
