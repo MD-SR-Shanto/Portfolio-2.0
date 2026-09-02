@@ -726,3 +726,11 @@ section.page-content {
         border-radius: 6px !important;
     }
 }
+
+/* Hide menu icon on desktop screens */
+#menu-icon {
+    font-size: 2rem;
+    color: #00ADB5;
+    cursor: pointer;
+    display: none;
+}
